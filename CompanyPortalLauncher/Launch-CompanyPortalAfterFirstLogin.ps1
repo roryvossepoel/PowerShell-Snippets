@@ -37,6 +37,7 @@ $EncodedCommand = [Convert]::ToBase64String(
 )
 
 # Use the built-in Windows PowerShell executable
+# Make use of RunHiddenConsole to hide the PowerShell prompt: https://github.com/SeidChr/RunHiddenConsole
 $TargetPath = "$env:SystemRoot\System32\WindowsPowerShell\v1.0\powershell.exe"
 
 # Run hidden and bypass execution policy restrictions
