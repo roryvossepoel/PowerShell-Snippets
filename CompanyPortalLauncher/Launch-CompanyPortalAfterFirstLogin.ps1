@@ -8,6 +8,14 @@
 #
 # Useful for Autopilot and post-provisioning scenarios where Company Portal
 # needs to be started once after the user's first desktop session.
+#
+# Intune deployment requirements:
+#   - Run in User Context
+#   - Run using 64-bit PowerShell
+#   - Do NOT run as SYSTEM
+#
+# The script writes to the user's Startup folder (%APPDATA%) and therefore
+# must execute in the context of the target user.
 # ---------------------------------------------------------------------------
 
 # User Startup folder
